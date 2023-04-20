@@ -5,6 +5,7 @@ import Details from './Details';
 // import Root from './routes/root';
 // import ErrorPage from './ErrorPage';
 import HomePage from './routes/HomePage';
+import NavBar from "./shared/NavBar";
 // import ClassesPage from './routes/ClassesPage';
 // import DonationPage from './routes/DonationPage';
 // import LivePage from './routes/LivePage';
@@ -69,8 +70,7 @@ function App() {
     <div>
       <BrowserRouter>
         <header>
-          <Link to="/mandy-new-hsl/">Home</Link>
-          <Link to="/mandy-new-hsl/details">Details</Link>
+          <NavBar>
         </header>
         <Routes>
           <Route path="/mandy-new-hsl/details" element={<Details />} />
