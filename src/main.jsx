@@ -1,61 +1,63 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Root from "./routes/root";
-import ErrorPage from "./ErrorPage";
-import HomePage from "./routes/HomePage";
-import ClassesPage from "./routes/ClassesPage";
-import DonationPage from "./routes/DonationPage";
-import LivePage from "./routes/LivePage";
-import RegisterPage from "./routes/RegisterPage";
-import HistoryPage from "./routes/HistoryPage";
-import FsCalendarPage from "./routes/FsCalendarPage";
-import EventsPage from "./routes/EventsPage";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Root from './routes/root';
+import ErrorPage from './ErrorPage';
+import HomePage from './routes/HomePage';
+import ClassesPage from './routes/ClassesPage';
+import DonationPage from './routes/DonationPage';
+import LivePage from './routes/LivePage';
+import RegisterPage from './routes/RegisterPage';
+import HistoryPage from './routes/HistoryPage';
+import FsCalendarPage from './routes/FsCalendarPage';
+import EventsPage from './routes/EventsPage';
+
+console.log('flooma');
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "",
+        path: '',
         element: <HomePage />,
       },
       {
-        path: "classes",
+        path: 'classes',
         element: <ClassesPage />,
       },
       {
-        path: "donate",
+        path: 'donate',
         element: <DonationPage />,
       },
       {
-        path: "live",
+        path: 'live',
         element: <LivePage />,
       },
       {
-        path: "register",
+        path: 'register',
         element: <RegisterPage />,
       },
       {
-        path: "events",
+        path: 'events',
         element: <EventsPage />,
       },
       {
-        path: "fscalendar",
+        path: 'fscalendar',
         element: <FsCalendarPage />,
       },
       {
-        path: "history",
+        path: 'history',
         element: <HistoryPage />,
       },
     ],
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
