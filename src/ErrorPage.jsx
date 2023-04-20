@@ -1,5 +1,5 @@
-import { useRouteError } from "react-router-dom";
-import NavBar from "./NavBar";
+import { useRouteError } from 'react-router-dom';
+import NavBar from './NavBar';
 
 export default function ErrorPage() {
   const error = useRouteError();
@@ -13,14 +13,15 @@ export default function ErrorPage() {
         <p>
           <i>
             {error.status === 404
-              ? "The page you tried to reach was not found."
+              ? 'The page you tried to reach was not found.'
               : null}
           </i>
         </p>
         <p>
           <i>
-            {" "}
-            If the error persists, please reach out in the{" "}
+            {' '}
+            If the error persists, please reach out in the
+            {' '}
             <a
               href="https://groups.google.com/forum/?fromgroups#!forum/heatsynclabs"
               alt="HSL Google Group"
@@ -28,7 +29,8 @@ export default function ErrorPage() {
               rel="noreferrer"
             >
               Discussion Group
-            </a>{" "}
+            </a>
+            {' '}
           </i>
         </p>
       </div>
