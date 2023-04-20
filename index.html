@@ -11,17 +11,17 @@
     />
     <meta name="author" content="" />
     <link
-      href="/deps/bootstrap/css/bootstrap.css"
+      href="./deps/bootstrap/css/bootstrap.css"
       rel="stylesheet"
       type="text/css"
     />
     <link
-      href="/deps/bootstrap/css/bootstrap-responsive.css"
+      href="./deps/bootstrap/css/bootstrap-responsive.css"
       rel="stylesheet"
       type="text/css"
     />
     <link
-      href="/deps/Font-Awesome/css/font-awesome.min.css"
+      href="./deps/Font-Awesome/css/font-awesome.min.css"
       rel="stylesheet"
       type="text/css"
     />
@@ -29,7 +29,7 @@
       src="https://kit.fontawesome.com/daeb911119.js"
       crossorigin="anonymous"
     ></script>
-    <link href="/css/app.css" rel="stylesheet" type="text/css" />
+    <link href="./css/app.css" rel="stylesheet" type="text/css" />
     <meta name="theme-color" content="#f99b0c" />
 
     <script type="text/javascript">
@@ -58,20 +58,20 @@
         // Check that service workers are registered
         if ("serviceWorker" in navigator) {
           // we need better SSL accross the board before this
-          navigator.serviceWorker.register("/sw.js", { scope: "/" });
+          navigator.serviceWorker.register("./sw.js", { scope: "./" });
         }
       });
     </script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="src/main.jsx"></script>
+    <script type="module" src="./src/main.jsx"></script>
     <script
       async
       type="text/javascript"
       src="https://api.flickr.com/services/rest/?tags=publish&format=json&method=flickr.photos.search&api_key=bec64c9c0f28889dc6e0c5ef7be3511f&user_id=60827818@N07&per_page=20&jsoncallback=hslflickr"
     ></script>
-    <script type="module" src="/src/scripts/doors.js"></script>
-    <script type="module" src="/src/scripts/flickr.js"></script>
+    <script type="module" src="./src/scripts/doors.js"></script>
+    <script type="module" src="./src/scripts/flickr.js"></script>
   </body>
 </html>
