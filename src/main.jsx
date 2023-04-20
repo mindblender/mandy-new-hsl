@@ -70,12 +70,12 @@ function App() {
     <div>
       <BrowserRouter>
         <header>
-          <Link to="/">Home</Link>
-          <Link to="/details">Details</Link>
+          <Link to="/mandy-new-hsl">Home</Link>
+          <Link to="/mandy-new-hsl/details">Details</Link>
         </header>
         <Routes>
-          <Route path="/details" element={<Details />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/mandy-new-hsl/details" element={<Details />} />
+          <Route path="/mandy-new-hsl/" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </div>
