@@ -5,7 +5,7 @@ import Details from './Details';
 // import Root from './routes/root';
 // import ErrorPage from './ErrorPage';
 import HomePage from './routes/HomePage';
-import NavBar from "./shared/NavBar";
+import NavBar from './shared/NavBar';
 // import ClassesPage from './routes/ClassesPage';
 // import DonationPage from './routes/DonationPage';
 // import LivePage from './routes/LivePage';
