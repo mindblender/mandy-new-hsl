@@ -1,7 +1,6 @@
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Details from './Details';
-import Home from './Home';
 // import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 // import Root from './routes/root';
 // import ErrorPage from './ErrorPage';
