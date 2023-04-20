@@ -1,11 +1,12 @@
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Details from './Details';
 // import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 // import Root from './routes/root';
 // import ErrorPage from './ErrorPage';
 import HomePage from './routes/HomePage';
 import NavBar from './shared/NavBar';
+import ClassesPage from "./routes/ClassesPage";
 // import ClassesPage from './routes/ClassesPage';
 // import DonationPage from './routes/DonationPage';
 // import LivePage from './routes/LivePage';
@@ -73,7 +74,7 @@ function App() {
           <NavBar />
         </header>
         <Routes>
-          <Route path="/mandy-new-hsl/details" element={<Details />} />
+          <Route path="/mandy-new-hsl/classes" element={<ClassesPage />} />
           <Route path="/mandy-new-hsl/" element={<HomePage />} />
         </Routes>
       </BrowserRouter>

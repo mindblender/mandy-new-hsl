@@ -6,7 +6,7 @@ export default defineConfig(({ command, mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   return {
     plugins: [react()],
-    base: env.VITE_BASE ?? '/',
+    base: env.VITE_BASE ?? '/mandy-new-hsl/',
   };
 });
 
