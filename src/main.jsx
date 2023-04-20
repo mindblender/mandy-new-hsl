@@ -70,7 +70,7 @@ function App() {
     <div>
       <BrowserRouter>
         <header>
-          <NavBar>
+          <NavBar />
         </header>
         <Routes>
           <Route path="/mandy-new-hsl/details" element={<Details />} />
